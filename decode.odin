@@ -39,7 +39,7 @@ main :: proc() {
 	base_device: ^D3D11.IDevice
 	base_device_context: ^D3D11.IDeviceContext
 
-	// NOTE: .VIDEO_SUPPORT flag is incorrect in the current vendor D3D11.odin file. Change it from 12 to 11 and this call won't fail.
+	// NOTE: .VIDEO_SUPPORT flag was incorrect in the recent vendor D3D11.odin file. Make sure to pull>rebuild odin otherwise this call will fail.
 	D3D11.CreateDevice(nil, .HARDWARE, nil,{.VIDEO_SUPPORT},&feature_levels[0],len(feature_levels),D3D11.SDK_VERSION, &base_device,nil, &base_device_context)
 
 	device: ^D3D11.IDevice
