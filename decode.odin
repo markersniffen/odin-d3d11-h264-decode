@@ -13,7 +13,7 @@ import win32 "core:sys/windows"
 
 VIDEO_WIDTH  :: 1920
 VIDEO_HEIGHT :: 1080
-VIDEO_PATH :: "C:/Users/marxn/Downloads/big_buck_bunny_1080p_h264.mov"
+VIDEO_PATH :: "big_buck_bunny.mp4"
 
 main :: proc() {
 	SDL.Init({.VIDEO})
